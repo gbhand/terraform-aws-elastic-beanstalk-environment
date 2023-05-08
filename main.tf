@@ -564,7 +564,7 @@ locals {
     {
       namespace = "aws:ec2:vpc"
       name      = "ELBScheme"
-      value     = var.environment_type == "LoadBalanced" ? var.elb_scheme : ""
+      value     = var.environment_type == "LoadBalanced" ? var.elb_scheme : "public"
     },
     {
       namespace = "aws:elasticbeanstalk:environment:process:default"
